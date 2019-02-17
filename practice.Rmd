@@ -1,0 +1,18 @@
+---
+title: "Practice"
+author: "Kristy"
+date: "2017¦~10¤ë12¤é"
+output: word_document
+---
+
+```{r}
+read.csv("no_999.csv")
+model1<-lm(`Approximated Social Grade` ~ factor(`Family Composition`)+factor(Sex)+factor(`Marital Status`)+factor(Student)+factor(Region)+factor(`Country of Birth`)+factor(Health)+factor(`Ethnic Group`)+factor(`Economic Activity`)+factor(Occupation)+factor(Industry)+factor(`Hours worked per week`),data=no_999)
+model1
+step(model1,test="F")
+
+
+
+
+```
+
